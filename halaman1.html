@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="halaman1.css">
+		<title>NVIDIA</title>
+	</head>
+
+	<body>
+		<!--SIDEBAR-->
+		<div id="mySidebar" class="sidebar">
+			<a href="halaman2.html">About</a>
+			<a href="halaman3.html">Services</a>
+			<a href="halaman4.html">Clients</a>
+			<a href="halaman5.html">Contact</a>
+		</div>
+		<div id="screen">
+			<div class="navbar">
+				<div class="toggle_btn">
+					<button class="Tombol" onclick="myFunc()"> <i class="fa-solid fa-bars"
+							style="color:white;"></i></button>
+
+					<div class="logo"><a href="#">NVIDIA</a></div>
+				</div>
+				<ul class="links">
+					<li><a href="#">Beranda</a></li>
+					<li><a href="#">Tentang</a></li>
+					<li><a href="#">Layanan</a></li>
+					<li><a href="#">Hubungi</a></li>
+				</ul>
+			</div>
+
+			<main>
+				<section id="konten">
+					<h1>Selamat Datang!</h1>
+					<p>Bersiaplah untuk bermain game dan berkreasi dengan kartu grafis NVIDIA®
+						GeForce RTX
+						<br>Dibuat dengan arsitektur NVIDIA Ada Lovelace yang sangat efisien.
+						<br>Rasakan ray tracing yang cepat, performa yang dipercepat AI dengan
+						DLSS3,
+						<br> baru untuk berkreasi, dan banyak lagi.</p>
+				</section>
+
+				<!--FOOTER-->
+				<footer>
+					<div class="container">
+						<h1>Information</h1>
+						<li>
+							<a href="#">Graphics Cards</a>
+							<a href="#">Laptops</a>
+							<a href="#">G-SYNC Monitors</a>
+							<a href="#">GeForce NOW Cloud Gaming</a>
+						</li>
+						<div class="row">
+							<div class="teks_footer">
+								<p>Hak Cipta &copy; 2023 NVIDIA. Hak cipta dilindungi undang-undang.<br>Design
+									by rudi ardianto 20210801221</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+		<script>
+			function myFunc() {
+			  var side = document.getElementById("mySidebar");
+			  var main = document.getElementById("screen");
+			  
+			  if(side.classList.contains("show")) {
+				side.classList.remove("show");
+				main.classList.remove("mainShow");
+			  }else {
+				side.classList.add("show");
+				main.classList.add("mainShow");
+			  }
+			}
+			</script>
+	</body>
+</html>
